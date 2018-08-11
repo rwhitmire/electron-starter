@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 type Props = {
   title: string,
   body: string
-}
+};
 
 class NotifyButton extends Component<Props> {
   handleClick() {
@@ -13,9 +13,7 @@ class NotifyButton extends Component<Props> {
   }
 
   render() {
-    return <button onClick={() => this.handleClick()}>
-      Notify
-    </button>
+    return <button onClick={() => this.handleClick()}>Notify</button>;
   }
 }
 
