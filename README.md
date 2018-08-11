@@ -7,3 +7,4 @@
 - [] app deploy
 - [] web deploy
 - [] flow
+- [] app icon

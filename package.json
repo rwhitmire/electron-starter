@@ -1,8 +1,11 @@
 {
   "name": "electron-starter",
   "version": "0.1.0",
+  "description": "This is just a starter.",
+  "author": "Rusty Shackleford",
   "private": true,
   "main": "electron/main.js",
+  "homepage": "./",
   "dependencies": {
     "electron-is-dev": "^0.3.0",
     "react": "^16.4.2",
@@ -14,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "estart": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\""
+    "estart": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "ebuild": "yarn build && build"
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
@@ -22,5 +26,17 @@
     "electron": "^2.0.7",
     "electron-builder": "^20.27.1",
     "wait-on": "^2.1.0"
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.example.electron-starter",
+    "files": [
+      "build/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "directories":{
+      "buildResources": "assets"
+    }
   }
 }
