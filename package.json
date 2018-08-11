@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "estart": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "ebuild": "yarn build && build",
-    "release": "build",
+    "release": "yarn build && build",
     "format": "prettier --write \"src/**/*.{js,css}\""
   },
   "devDependencies": {
