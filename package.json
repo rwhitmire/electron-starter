@@ -6,6 +6,7 @@
   "private": true,
   "main": "electron/main.js",
   "homepage": "./",
+  "repository": "https://github.com/rwhitmire/electron-starter",
   "dependencies": {
     "electron-is-dev": "^0.3.0",
     "global": "^4.3.2",
@@ -42,6 +43,9 @@
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "win": {
+      "publish": ["github"]
     }
   }
 }
