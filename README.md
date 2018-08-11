@@ -1,8 +1,7 @@
 ## Todo
 
-- [] prettier
-- [] eslint
-- [] build installer
+- [x] prettier
+- [x] build installer
 - [] auto updates
 - [] app deploy
 - [] web deploy

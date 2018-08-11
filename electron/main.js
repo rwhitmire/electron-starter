@@ -14,6 +14,9 @@ function createWindow() {
   mainWindow.on('closed', () => mainWindow = null);
 }
 
+// make sure this matches appId in package.json
+app.setAppUserModelId('com.example.electron-starter');
+
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
