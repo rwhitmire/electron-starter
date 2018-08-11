@@ -5,5 +5,5 @@
 - [] auto updates
 - [] app deploy
 - [] web deploy
-- [] flow
+- [x] flow
 - [] app icon

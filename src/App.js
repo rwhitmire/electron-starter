@@ -1,12 +1,11 @@
+// @flow
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NotifyButton from './NotifyButton';
 
-class App extends Component {
-  showNotification() {
-    let notification = new Notification('it', { body: 'worked' });
-  }
-
+class App extends Component<{}> {
   render() {
     return (
       <div className="App">
@@ -18,9 +17,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <button onClick={() => this.showNotification()}>
-            show notification
-          </button>
+          <NotifyButton title="foo" body="bar" />
         </p>
       </div>
     );
