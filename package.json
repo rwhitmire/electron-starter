@@ -1,6 +1,6 @@
 {
   "name": "electron-starter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "This is just a starter.",
   "author": "Rusty Shackleford",
   "private": true,
