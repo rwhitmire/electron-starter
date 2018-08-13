@@ -5,6 +5,7 @@ const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
 const url = require('url');
 const isDev = require('electron-is-dev');
+const { autoUpdater } = require("electron-updater")
 
 let mainWindow;
 
@@ -13,6 +14,8 @@ function createWindow() {
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   mainWindow.on('closed', () => mainWindow = null);
 }
+
+autoUpdater.checkForUpdatesAndNotify()
 
 // make sure this matches appId in package.json
 app.setAppUserModelId('com.example.electron-starter');

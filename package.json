@@ -9,6 +9,7 @@
   "repository": "https://github.com/rwhitmire/electron-starter",
   "dependencies": {
     "electron-is-dev": "^0.3.0",
+    "electron-updater": "^3.1.1",
     "global": "^4.3.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
