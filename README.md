@@ -2,8 +2,8 @@
 
 - [x] prettier
 - [x] build installer
-- [ ] auto updates
-- [ ] app deploy
+- [x] auto updates
+- [x] app deploy
 - [ ] web deploy
 - [x] flow
 - [ ] app icon
